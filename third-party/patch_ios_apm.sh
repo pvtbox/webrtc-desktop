@@ -1,0 +1,2 @@
+#set -Wno-address-of-packed-member flag for ios build
+find build/config/compiler/BUILD.gn -exec sed -i .original 's/\"-Wno-unused-parameter\",/\"-Wno-unused-parameter\", \"-Wno-address-of-packed-member\",/' '{}' ';'
